@@ -1,1 +1,111 @@
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
 
+/* Navigation bar */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    border-bottom: 4px solid #555;
+    padding: 20px;
+    z-index: 1000;
+}
+
+nav a {
+    margin-right: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Unvisited links */
+
+nav a:link {
+    color: lightblue;
+}
+
+/* Visited links */
+
+nav a:visited {
+    color: pink;
+}
+
+/* Mouse over links */
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 30px;
+}
+
+/* Homepage title */
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: darkblue;
+}
+
+h1::first-letter {
+    font-size: 60px;
+}
+
+/* Text box */
+
+.text-box {
+    background-color: white;
+    border: 4px solid darkblue;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+/* Images page */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+/* Hidden text page */
+
+.hidden-word {
+    display: inline-block;
+    width: 60px;
+    background-color: black;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hidden-word:focus {
+    color: yellow;
+}
+
+/* Capitalize first line of paragraphs */
+
+.hidden-page p::first-line {
+    text-transform: uppercase;
+}
